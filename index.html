@@ -1,16 +1,138 @@
-<html>= lang="en">
-<body class="container mt-5">
-    <h1>LIST {Adding & detecting}</h1>
-    <p> Enter a value to add or delete. </p>
+<!DOCTYPE html>
+<html lang="en">
 
-    <input type="text" id="user_input" class="form-control mb-3">
-    <body class=container m-5>
-    <button type="button" class=btn btn-success" py-click="append-value">ADD</button>
-    <button type="button" class=btn btn-dangerclick="delete">ADD</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <h3 class="mt-4">Attendance summary</h3>
-            <div id="output"></div>
-             <p id="message"></p>
+    <title>The Fairy WINX Club</title>
 
-             
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.10.2/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.10.2/core.js"></script>
 
+    <style>
+        body {
+            background: white;
+            font-family: Arial, sans-serif;
+            color: #444;
+            padding: 60px 8%;
+        }
+
+        .container {
+            max-width: 550px;
+            margin: auto;
+        }
+
+        .stars {
+            color: #d49bc2;
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-family: Georgia, serif;
+            font-size: 26px;
+            font-weight: normal;
+            color: #9275ad;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 13px;
+            line-height: 1.7;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .subtitle {
+            font-size: 10px;
+            letter-spacing: 2px;
+            color: #a68bbb;
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 0;
+            margin-bottom: 12px;
+            border: none;
+            border-bottom: 1px solid #eeeeee;
+            outline: none;
+            font-size: 13px;
+        }
+
+        input:focus {
+            border-bottom: 1px solid #b99bd4;
+        }
+
+        button {
+            background: none;
+            border: none;
+            padding: 10px 0;
+            color: #9275ad;
+            font-size: 11px;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            color: #b99bd4;
+        }
+
+        #output {
+            margin-top: 35px;
+            font-size: 13px;
+            line-height: 1.9;
+            color: #666;
+        }
+
+        #output h3 {
+            font-family: Georgia, serif;
+            font-size: 17px;
+            font-weight: normal;
+            color: #9275ad;
+        }
+
+        .footer {
+            margin-top: 35px;
+            color: #b99bd4;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="stars">✧ ˚ · ✧</div>
+
+        <h2>The Fairy WINX Club</h2>
+
+        <p>
+            A space for curious butterflies and passionate individuals.
+            Explore ideas, share knowledge, and create meaningful change.
+            Grow your wings like a WINX! Join today and inquire.
+        </p>
+
+        <div class="subtitle">NEW MEMBER</div>
+
+        <input type="text" id="fname" placeholder="First name">
+
+        <input type="text" id="lname" placeholder="Last name">
+
+        <button py-click="add_member">ADD MEMBER ✧</button>
+
+        <div id="output">
+            Loading members...
+        </div>
+
+        <div class="footer">✧</div>
+
+    </div>
+
+    <script type="py" src="./main.py"></script>
+
+</body>
+</html>
